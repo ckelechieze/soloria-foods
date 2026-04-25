@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-5xl text-red-500">My first tailwind</h1>
+
+    <div class="bg-blue-700 py-10 px-6 w-full max-w-60 h-40 overflow-auto hover:bg-amber-600 hover:translate-y-3 mx-auto transition-all duration-500 rounded-lg shadow-3xl hover:scale-120 hover:rotate-30">
+        <h2 class ="text-white text-2xl antialiased italic font-bold tracking-widest text-center text-blue-800 decoration-red-500  capitalize">heading text</h2>
+
+        <p class="leading-6 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magni corporis molestiae.</p>
+
+        <button class="bg-yellow-400 py-2 px-10 mt-4 ml-4 mb-4 rounded-xl border-4 border-black/30 cursor-pointer hover:text-red-700">Click Here</button>
+    </div>
+
+    <div class="bg-green-400 py-12 px-6 mt-6 mr-5 ml-5 group">
+        <h2 class="font-extrabold text-2xl text-white group-hover:text-red-400">Grouping
+        </h2>
+
+        <button class="bg-yellow-500 text-red-600 py-2 px-7 rounded-xl">Click Here
+        </button>
+    </div>
+
+    <div class="border py-12 px-6 m-4 group">
+        <h2 class="text-red-700 font-bold">Third Heading</h2>
+
+        <p class="hidden group-hover:block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, quaerat?</p>
+    </div>
+
+    <section class="bg-red-500 min-h-60 py-16 px-4 group/parent">
+        <div class="grid grid-cols-3 gap-4 py-10 px-4 border-2 border-white group/child">
+            <div class="bg-primary-col text-black h-40 group-hover/parent:bg-blue-500 group-hover/parent:text-white">1</div>
+            <div class="bg-white/90 text-black h-40 group-hover/child:bg-yellow-400">2</div>
+            <div class="bg-white/90 text-black h-40">3</div>
+        </div>
+    </section>
+
+    <button class="bg-blue-700 text-white h-8 w-8 rounded-full fixed right-2 bottom-6 z-3 shadow-xl shadow-yellow-100/5 border border-white/30 animate-spin">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <!--Grid and Flex-->
+    <div class="w-16 h-16 bg-green-600 animate-turn"></div>
+
+    <div class="my-16 w-full bg-blue-700 text-black flex gap-4 py-8">
+        <div class="bg-yellow-400 h-40 w-33/100 flex justify-center items-center text-2xl">1</div>
+        <div class="bg-yellow-400 h-40 w-33/100 flex justify-center items-center text-2xl">2</div>
+        <div class="bg-yellow-400 h-40 w-33/100 flex justify-center items-center text-2xl">3</div>
+    </div>
+
+    <div class="my-16 w-full grid grid-cols-3 grid-rows-3 gap-3 px-2">
+        <div class="bg-blue-400 col-start-2 col-end-4 row-start-3 row-end-4">1</div>
+        <div class="bg-blue-400 col-start-2 col-end-3 row-start-2 row-end-3">2</div>
+        <div class="bg-blue-400 col-start-3 col-end-4 row-start-1 row-end-3">3</div>
+        <div class="bg-blue-400 col-start-1 col-end-3 row-start-1 row-end-2">4</div>
+        <div class="bg-blue-400 col-start-1 col-end-2 row-start-2 row-end-4">5</div>
+    </div>
+</body>
+</html>
