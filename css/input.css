@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary-col: #6E1A37;
-    --animate-turn: rotate 3s ease-in-out 2s infinite;
+    --color-pri-col: #213fb1;
+    --color-gold: #efab0c;
+    --color-white-shade: #f6f6f6;
+    --color-deep-blue: #111a29;
+    --color-footer-blue: #111828;
 }
 
 @keyframes rotate {
@@ -13,6 +16,26 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+.card {
+    @apply bg-green-400 py-10 px-5 flex flex-col gap-4 border border-black/15 rounded-3xl overflow-hidden shadow-2xl relative before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black/40 transition duration-500 ease-in-out;
+}
+
+.navlink-active {
+    @apply text-pri-col;
+}
+
+.container {
+    @apply w-[90%] mx-auto 2xl:w-3/5;
+}
+
+.input {
+    @apply border border-black/20 h-10 rounded outline-0 focus:border-pri-col px-3
+}
+
+.textarea {
+    @apply border border-black/20 rounded outline-0 focus:border-pri-col px-3
 }
 
 /*.do-animate {
