@@ -3,88 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/output.css" rel="stylesheet">
+    <title>About Page</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-    <h1 class="text-5xl text-red-500">My first tailwind</h1>
+    
+    <header class="h-[4.5rem] w-full border-b border-black/10 sticky top-0 z-50 bg-white-shade shadow-xl">
+        <nav class="h-full flex items-center justify-between px-4 relative">
+            <div class="font-bold flex items-center gap-2">
+                <img src="./images/soloria-logo.jpeg" alt="soloria-logo" class="w-16 h-16 rounded-full mr-2 inline-block">
+                <h1 class="text-gray-700 tracking-widest text-bold text-2xl">Soloria Foods</h1>
+            </div>
 
-    <div class="bg-blue-700 py-10 px-6 w-full max-w-60 h-40 overflow-auto hover:bg-amber-600 hover:translate-y-3 mx-auto transition-all duration-500 rounded-lg shadow-3xl hover:scale-120 hover:rotate-30">
-        <h2 class ="text-white text-2xl antialiased italic font-bold tracking-widest text-center text-blue-800 decoration-red-500  capitalize">heading text</h2>
+            <ul class="hidden lg:flex gap-8 items-center">
+                <li>
+                    <a href="#" class="text-black/85 hover:text-pri-col font-medium navlink-active">Home</a>
+                </li>
+                 <li>
+                    <a href="#" class="text-black/85 hover:text-pri-col font-medium">About</a>
+                </li>
+                 <li>
+                    <a href="#">Services</a>
+                </li>
+                 <li>
+                    <a href="#" class="text-black/85 hover:text-pri-col font-medium">Contact</a>
+                </li>
+            </ul>
 
-        <p class="leading-6 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis magni corporis molestiae.</p>
+            <!--Mobile Menu-->
+            <div class="lg:hidden">
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-        <button class="bg-yellow-400 py-2 px-10 mt-4 ml-4 mb-4 rounded-xl border-4 border-black/30 cursor-pointer hover:text-red-700">Click Here</button>
-    </div>
+                <ul class=" hidden absolute top-full left-0 bg-white-shade border-t border-r border-black/10 w-3/5 max-w-60 h-[calc(100vh-4.5rem)] flex flex-col gap-5 justify-center items-center">
+                    <li>
+                        <a href="#" class="text-black/85 hover:text-pri-col font-medium navlink-active">Home</a>
+                    </li>
+                     <li>
+                        <a href="#"class="text-black/85 hover:text-pri-col font-medium">About</a>
+                    </li>
+                     <li>
+                        <a href="#"class="text-black/85 hover:text-pri-col font-medium">Services</a>
+                    </li>
+                     <li>
+                        <a href="#"class="text-black/85 hover:text-pri-col font-medium">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <div class="bg-green-400 py-12 px-6 mt-6 mr-5 ml-5 group">
-        <h2 class="font-extrabold text-2xl text-white group-hover:text-red-400">Grouping
-        </h2>
+    <section class=" relative w-full h-[calc(100vh-4.5rem)] bg-[url('../images/rice-50kg.jpeg')] bg-no-repeat bg-center bg-cover">
+        <div class="relative z-20 flex flex-col gap-6 2xl:gap-10 h-full justify-center items-center">
+            <h2 class="text-white-shade font-bold text-4xl md:text-6xl 2xl:text-7xl text-center w-9/10 max-w-120 capitalize">Premium Quality Soloria Rice</h2>
 
-        <button class="bg-yellow-500 text-red-600 py-2 px-7 rounded-xl">Click Here
-        </button>
-    </div>
+            <p class="text-white-shade text-center w-9/10 max-w-120 text-xl md:text-3xl 2xl:text-2xl 2xl:max-w-180">Soloria Foods offers premium quality Nigerian rice at competitive prices. We are committed to providing the best rice to our customers.</p>
 
-    <div class="border py-12 px-6 m-4 group">
-        <h2 class="text-red-700 font-bold">Third Heading</h2>
+            <div class="flex flex-col lg:flex-row gap-2">
+                <a href="#" class="bg-gold text-white-shade text-2xl py-3 px-16 rounded-2xl hover:bg-pri-col">Order Now</a>
+                <a href="#" class=" text-white-shade text-2xl bg-gray-500/30 border border-white-shade py-3 px-16 rounded-2xl hover:bg-pri-col">View Products</a>
+            </div>
+        </div>
 
-        <p class="hidden group-hover:block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, quaerat?</p>
-    </div>
+        <!--Overlay-->
+        <div class="absolute left-0 top-0 bg-pri-col/50 w-full h-full z-10"></div>
+    </section>
 
-    <section class="bg-red-500 min-h-60 py-16 px-4 group/parent">
-        <div class="grid grid-cols-3 gap-4 py-10 px-4 border-2 border-white group/child">
-            <div class="bg-primary-col text-black h-40 group-hover/parent:bg-blue-500 group-hover/parent:text-white">1</div>
-            <div class="bg-white/90 text-black h-40 group-hover/child:bg-yellow-400">2</div>
-            <div class="bg-white/90 text-black h-40">3</div>
+    <!--Products Section-->
+    <section class="bg-blue-50/70 mt-16 w-full py-16">
+
+        <div class="w-9/10 max-w-7xl mx-auto">
+            <!--heading/paragraph-->
+            <div class="flex flex-col gap-2 items-center">
+                <h2 class="font-bold text-2xl md:text-3xl 2xl:text-4xl text-center">
+                    Our Products
+                </h2>
+                <hr class="w-full h-1/2 border-t border-gray-400/50">
+
+                <p class="text-black/50 text-xl text-center w-9/10 max-w-120 md:text-2xl font-medium">
+                      We have different sizes of bags of rice available ranging from 10kg to 100kg. 
+                </p>
+            </div>
+
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+                <!--First Card-->
+            <div class="bg-white-shade border border-black/10 shadow-xl py-8 px-4 flex flex-col gap-4 rounded-2xl">
+                <span class="self-start w-10 h-10 p-6 flex justify-center items-center bg-blue-600/10 rounded-lg text-pri-col font-bold">
+                   10kg
+                </span>
+                <h3 class="font-bold text-gray-600">
+                    10kg Bags of Soloria Rice
+                </h3>
+
+                <img src="./images/rice-10kg.jpeg" alt="10kg Bag of Soloria Rice" class="rounded-2xl w-full border border-transparent hover:border-pri-col hover:scale-105 transition-all duration-300">
+            </div>
+
+             <!--Second Card-->
+            <div class="bg-white-shade border border-black/10 shadow-xl py-8 px-4 flex flex-col gap-4 rounded-2xl">
+                <span class="self-start w-10 h-10 p-6 flex justify-center items-center bg-blue-600/10 rounded-lg text-pri-col font-bold">
+                   25kg
+                </span>
+                <h3 class="font-bold text-gray-600">
+                    25kg Bags of Soloria Rice
+                </h3>
+
+                <img src="./images/rice-25kg.jpeg" alt="25kg Bag of Soloria Rice" class="rounded-2xl w-full border border-transparent hover:border-pri-col hover:scale-105 transition-all duration-300">
+            </div>
+
+            <!--Third Card-->
+            <div class="bg-white-shade border border-black/10 shadow-xl py-8 px-4 flex flex-col gap-4 rounded-2xl">
+                <span class="self-start w-10 h-10 p-6 flex justify-center items-center bg-blue-600/10 rounded-lg text-pri-col font-bold">
+                   50kg
+                </span>
+                <h3 class="font-bold text-gray-600">
+                    50kg Bags of Soloria Rice
+                </h3>
+
+                <img src="./images/rice-50kg.jpeg" alt="50kg Bag of Soloria Rice" class="rounded-2xl w-full border border-transparent hover:border-pri-col hover:scale-105 transition-all duration-300">
+            </div>
+         </div>
+        </div>
+    </section>
+    
+    <!--About Section-->
+    <section class="bg-white w-full p-4 flex flex-col lg:flex-row gap-8 items-center justify-center">
+        <div class="flex-1 w-full flex flex-col gap-4  items-center">
+            <article class="flex flex-col gap-5 w-full md:w-1/2">
+                <h2 class="font-bold text-2xl md:text-xl lg:text-2xl 2xl:text-4xl text-center pt-2">About Soloria Foods</h2>
+
+                <hr class="w-full border-t border-gray-400/50">
+
+                <p class="text-2xl text-justify lg:text-lg 2xl:text-2xl text-gray-700">Soloria Foods was founded with a mission to provide high-quality rice to our customers. We are committed to excellence and customer satisfaction. Established in the year 2010, we have been serving our community with the best quality rice.</p>
+                
+                <!--Data Points-->
+                <div class="w-full flex gap-4 sm:gap-8 text-center justify-center">
+                    <div class="flex flex-col gap-1 text-center items-center">
+                        <span class="font-bold text-pri-col md:text-lg lg:text-2xl 2xl:text-3xl">500+</span>
+                        <span class="text-xs lg:text-base font-medium text-black/40">Clients Served</span>
+                    </div>
+
+                    <div class="flex flex-col gap-1 text-center items-center">
+                        <span class="font-bold text-pri-col md:text-lg lg:text-2xl 2xl:text-3xl">10+</span>
+                        <span class="text-xs lg:text-base font-medium text-black/40">Years Experience</span>
+                    </div>
+
+                    <div class="flex flex-col gap-1 text-center items-center">
+                        <span class="font-bold text-pri-col md:text-lg lg:text-2xl 2xl:text-3xl">95%</span>
+                        <span class="text-xs lg:text-base font-medium text-black/40">Success Rate</span>
+                    </div>
+                </div>
+            </article>
+
+            <hr class="w-full border-t border-gray-400/50 md:hidden">
+        </div>
+
+        <!--CEO Section-->
+        <div class="flex-1 flex flex-col gap-4 m-3 p-6 items-center justify-center">
+            <h2 class="bg-gold font-bold text-white-shade text-2xl mt-2 text-center w-full md:w-1/2 p-2 rounded-2xl">Meet Our CEO</h2>
+            <p  class="text-2xl text-justify lg:text-lg 2xl:text-2xl text-gray-700">Kelechi Eze is the visionary behind Soloria Foods, leading our team with passion and dedication. Kelechi has over 10 years of experience in the food industry and is dedicated to providing our customers with the highest quality rice.</p>
+            <div class="w-48 h-48 rounded-2xl md:w-56 h-56">
+            <img class="p-1 rounded-full border border-gray-400/50 mb-4 hover:border-gold w-48 h-48 hover:scale-105 transition duration-300" src="./images/ceo.jpeg" alt="soloria-ceo">
+            </div>
         </div>
     </section>
 
-    <button class="bg-blue-700 text-white h-8 w-8 rounded-full fixed right-2 bottom-6 z-3 shadow-xl shadow-yellow-100/5 border border-white/30 animate-spin">
-        <i class="fa-solid fa-angle-up"></i>
-    </button>
 
-    <!--Grid and Flex-->
-    <div class="w-16 h-16 bg-green-600 animate-turn"></div>
+    <!--Contact Section-->
+    <section class="bg-deep-blue py-16 flex flex-col gap-8 2xl:gap-12">
+        <div class="flex flex-col gap-2 items-center">
+            <h2 class="text-white-shade font-bold text-2xl lg:text-3xl 2xl:text-4xl">Get In Touch</h2>
+            <p class="text-white-shade/80 text-center font-medium text-sm lg:text-3xl 2xl:text-lg">Have questions or want to learn more about our services? Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
 
-    <div class="my-16 w-full bg-blue-700 text-black flex gap-4 py-8">
-        <div class="bg-yellow-400 h-40 w-33/100 flex justify-center items-center text-2xl">1</div>
-        <div class="bg-yellow-400 h-40 w-33/100 flex justify-center items-center text-2xl">2</div>
-        <div class="bg-yellow-400 h-40 w-33/100 flex justify-center items-center text-2xl">3</div>
-    </div>
+        <form class="bg-white-shade py-8 lg:py-10 px-4 lg:px-8 w-9/10 max-w-3xl mx-auto rounded-3xl shadow-2xl shadow-white-shade/10 flex flex-col gap-4 lg:gap-7">
+            <div class="grid grid-col-1 sm:grid-cols-2 lg:gap-7">
+                <div class="flex flex-col gap-2">
+                    <label for="fullname" class="font-semibold text-sm">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" class="input">
+                </div>
+            </div>
 
-    <div class="my-16 w-full grid grid-cols-3 grid-rows-3 gap-3 px-2">
-        <div class="bg-blue-400 col-start-2 col-end-4 row-start-3 row-end-4">1</div>
-        <div class="bg-blue-400 col-start-2 col-end-3 row-start-2 row-end-3">2</div>
-        <div class="bg-blue-400 col-start-3 col-end-4 row-start-1 row-end-3">3</div>
-        <div class="bg-blue-400 col-start-1 col-end-3 row-start-1 row-end-2">4</div>
-        <div class="bg-blue-400 col-start-1 col-end-2 row-start-2 row-end-4">5</div>
-    </div>
+            <div>
+                <div class="flex flex-col gap-2">
+                    <label for="email" class="font-semibold text-sm">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" class="input">
+                </div>
+            </div>
 
-    <div class="grid grid-cols-1 gap-4">
-        <div class="card">
-        <h2 class="font-bold">About Frontline</h2>
+            <div class="flex flex-col gap-2">
+                <label for="message" class="font-semibold text-sm">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" class="textarea"></textarea>  
+            </div>
 
-        <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nihil blanditiis, animi repellat perspiciatis veniam.</p>
+            <button class="bg-pri-col text-white-shade py-2.5 rounded-2xl font-semibold cursor-pointer active:translate-y-2 hover:bg-deep-blue">Order Now <i class="fa-regular fa-paper-plane"></i></button>
+        </form>
+    </section>
+    
+    <!--Socials-->
+    <section class="bg-gray-700 py-10 w-full mx-auto flex flex-col md:flex-row md:justify-center items-center gap-3 border-t border-black/10">
+        <h3 class="text-white-shade font-bold text-xl items-center justify-center">Follow Us</h3>
+        <div>
+            <a href="https://web.facebook.com/profile.php?id=61565082445745" class="text-blue-600 text-4xl hover:text-blue-300 mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61565082445745" class="text-black text-4xl hover:text-blue-300 mx-2"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61565082445745" class="text-purple-700 text-4xl hover:text-blue-300 mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61565082445745" class="text-blue-400 text-4xl hover:text-blue-300 mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </section>
 
-        <a href="#" class="bg-yellow-400 py-1 px-2 rounded-2xl m-4">Learn More</a>
-       </div>
+    <footer class="bg-footer-blue py-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-3 border-t border-black/10 justify-center items-center">
+            <p class="text-white-shade font-semibold text-lg lg:text-xl">Soloria Foods</p>
 
-        <div class="card">
-        <h2 class="font-bold">About Frontline</h2>
+            <p class="text-white-shade/50 text-sm lg:text-lg">&copy; Soloria Foods. All rights reserved.</p>
+    </footer>
 
-        <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nihil blanditiis, animi repellat perspiciatis veniam.</p>
+    <section class="mt-16">
 
-        <a href="#" class="bg-yellow-400 py-1 px-2 rounded-2xl m-4">Learn More</a>
-       </div>
-
-        <div class="card">
-        <h2 class="font-bold">About Frontline</h2>
-
-        <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nihil blanditiis, animi repellat perspiciatis veniam.</p>
-
-        <a href="#" class="bg-yellow-400 py-1 px-2 rounded-2xl m-4">Learn More</a>
-    </div>
-    </div>
+    </section>
 </body>
 </html>
